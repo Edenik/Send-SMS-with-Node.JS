@@ -4,9 +4,10 @@ const Nexmo = require('nexmo');
 require('dotenv').config();
 
 
-const message = 'message';
 const number = '+972501234567'
 const name = 'Eden Nahum'
+const code = parseInt(Math.random()*1000);
+const message = 'Code is: ' + code;
 
 const nexmoSettings = new Nexmo({
     apiKey: process.env.APIKEY,
